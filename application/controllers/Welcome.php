@@ -27,6 +27,6 @@ class Welcome extends CI_Controller {
 	* Perubahan nama
 	*/
 	public function nama(){
-		return "nama";
+		return "namssa";
 	}
 }
