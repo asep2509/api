@@ -23,6 +23,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 	public function edit(){
-		return false;
+		$this->str['title'] = "Saya sedang belajar Github";
+		$this->str['description'] = "Saya sangat senang belajar Pemrograman dan segala hal yang barunya";
+		$this->str['content'] = 'layout/content';
+
+		/**
+		* Load view and save with this str
+		*/
+		$this->load->view('edit', $this->str);
 	}
 }
